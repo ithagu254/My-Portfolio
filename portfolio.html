@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stephen Njuguna - Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo"><a href="#home">Stephen Njuguna</a></div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span class="highlight">Stephen Njuguna</span></h1>
+      <p>Full Stack Developer & Designer passionate about creating beautiful, functional web experiences</p>
+      <button class="cta-button" onclick="scrollToSection('about')">Learn More About Me</button>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Passionate Developer & Creative Problem Solver</h3>
+          <p>With over 3 years of experience in web development, I specialize in creating modern, responsive websites and applications. I'm passionate about clean code, user experience, and bringing creative ideas to life through technology.</p>
+          <p>My expertise includes Html, JavaScript, Java, C++, and modern CSS frameworks. I enjoy working with teams to solve complex problems and deliver exceptional digital experiences.</p>
+          <div class="skills">
+            <span class="skill-tag">Html</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">C</span>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="WhatsApp Image 2025-07-17 at 10.54.30 AM.jpeg" alt="Profile Picture" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop" alt="E-commerce Platform" />
+          <div class="project-content">
+            <h3>E-commerce Platform</h3>
+            <p>A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, and inventory management.</p>
+            <div class="project-tech"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=300&fit=crop" alt="Task Management App" />
+          <div class="project-content">
+            <h3>Task Management App</h3>
+            <p>A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+            <div class="project-tech"><span>Vue.js</span><span>Socket.io</span><span>Express</span></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop" alt="Weather Dashboard" />
+          <div class="project-content">
+            <h3>Weather Dashboard</h3>
+            <p>A responsive weather dashboard that displays current conditions, forecasts, and interactive maps using multiple weather APIs.</p>
+            <div class="project-tech"><span>JavaScript</span><span>API Integration</span><span>Chart.js</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=600&h=400&fit=crop')">
+          <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=300&h=200&fit=crop" />
+          <div class="gallery-overlay"><span>View Full Size</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop')">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300&h=200&fit=crop" />
+          <div class="gallery-overlay"><span>View Full Size</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop')">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=200&fit=crop" />
+          <div class="gallery-overlay"><span>View Full Size</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop')">
+          <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=300&h=200&fit=crop" />
+          <div class="gallery-overlay"><span>View Full Size</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600&h=400&fit=crop')">
+          <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=300&h=200&fit=crop" />
+          <div class="gallery-overlay"><span>View Full Size</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop')">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&h=200&fit=crop" />
+          <div class="gallery-overlay"><span>View Full Size</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's Work Together</h3>
+          <p>Whether you have a project in mind, want to discuss opportunities, or just want to say hello, I'd love to hear from you.</p>
+          <div class="contact-details">
+            <div class="contact-item"><span class="contact-icon">✉️</span><span>stephenithagu50@email.com</span></div>
+            <div class="contact-item"><span class="contact-icon">📍</span><span>Nairobi, Kenya</span></div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group"><label for="name">Name</label><input type="text" id="name" required /><span class="error-message" id="nameError"></span></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" required /><span class="error-message" id="emailError"></span></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" rows="5" required></textarea><span class="error-message" id="messageError"></span></div>
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container"><p>&copy; 2024 Stephen Njuguna. All rights reserved. Built with passion and code.</p></div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content">
+      <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <img id="lightbox-image" src="" alt="Lightbox Image" />
+    </div>
+  </div>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
